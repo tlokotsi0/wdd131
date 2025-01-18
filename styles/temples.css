@@ -1,0 +1,65 @@
+body {
+    display: grid;
+    height: 200vh;
+    grid-template: auto 1fr auto / 300px 1fr auto;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: antiquewhite;
+    padding: 2rem;
+    grid-column: 1/4;
+}
+
+img {
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: #333;
+    color: aliceblue;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1/4;
+}
+
+#menu-toggle {
+    display: block; /* Show the button */
+    background: none;
+    border: none;
+    color: antiquewhite;
+    font-size: 2em;
+    font-size: 2em;
+    float: right;
+    margin-right: 2rem;
+}
+
+/* Hide the navigation by default */
+.navigation {
+    display: none;
+}
+
+/* Show the navigation when the menu is active */
+.navigation.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Style the navigation items */
+.navigation li {
+    margin-bottom: 1rem;
+}
+
+.navigation a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+

@@ -13,7 +13,7 @@ header {
 }
 
 img {
-    max-width: 200px;
+    max-width: 300px;
     margin: 20px auto;
 }
 
@@ -62,4 +62,7 @@ footer {
     text-decoration: none;
 }
 
-
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}

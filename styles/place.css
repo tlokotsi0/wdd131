@@ -110,3 +110,9 @@
   .foot {
     margin-bottom: -8%;
   }
+
+  .weather h2::after{
+    content: url('images/weather.png');
+    display: inline-block;
+    margin-left: 5px;
+  }

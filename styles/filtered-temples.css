@@ -1,98 +1,126 @@
-#menu-toggle {
-    position: absolute; /* Positions it relative to the header */
-    top: 1rem; /* Moves it to the top */
-    right: 1rem; /* Aligns it to the right */
+.hamburger {
+    display: none; /* Hide on larger screens */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  
+  .hamburger input {
     display: block;
-    background: none;
-    border: none;
-    color: antiquewhite;
-    font-size: 2em;
-    cursor: pointer;
-    z-index: 1000; /* Ensures it's above other elements */
-}
-body {
-    display: grid;
-    height: 100vh;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr;
-}
-
-header {
-    width:100%;
-    text-align: center;
-    background-color: #333;
-    color: antiquewhite;
-    padding: 2rem;
-    grid-column: 1/-1; /* Adjusted */
-}
-
-img {
-    max-width: 100%;
-    width: 300px;
-    height: auto;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  .hamburger span {
     display: block;
-    margin: 20px auto;
-}
-
-footer {
-    width: 100%;
-    background-color: #333;
-    color: aliceblue;
-    padding: 2rem;
-    text-align: center;
-    grid-column: 1/3; /* Adjusted */
-}
-
-#menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    color: antiquewhite;
-    font-size: 2em;
-    float: right;
-    margin-right: 2rem;
-    cursor: pointer;
-}
-
-.navigation {
-    display: none;
-    position: absolute; /* Keeps it floating below the header */
-    top: 80px; /* Adjusts its position right below the header */
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    text-align: center;
-    padding: 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Ensures it appears above other elements */
-}
-.navigation.active {
-    opacity: 1;
-    display: block;
-}
-
-.navigation li {
-    margin-bottom: 1rem;
-}
-
-.navigation a {
-    color: antiquewhite;
-    text-decoration: none;
-}
-
-main {
-    max-width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-/* Basic styling for temple cards */
-.temple {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    width: 250px; /* Adjust width as needed */
-    float: left; /* For horizontal layout */
-}
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    background: #333;
+    transition: all .3s ease-in-out;
+  }
+  
+  .hamburger input:checked ~ span {
+    /* Toggle states */
+    &:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    &:nth-child(2) {
+      opacity: 0;
+    }
+  
+    &:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    /* Hide the original navigation on smaller screens */
+    nav ul {
+      display: none;
+    }
+  
+    /* Show the mobile navigation when the checkbox is checked */
+    .hamburger input:checked ~ nav ul {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #f0f0f0;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  
+  /* Original CSS for Temple Display */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  
+  header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+  }
+  
+  nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5em;
+  }
+  
+  nav a:hover {
+      background-color: #555;
+  }
+  
+  main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .temple-card {
+      background-color: #f7f7f7;
+      border: 1px solid #ddd;
+      margin: 1em;
+      padding: 1em;
+      width: 300px;
+  }
+  
+  .temple-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+  }
+  
+  footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+      clear: both;
+  }

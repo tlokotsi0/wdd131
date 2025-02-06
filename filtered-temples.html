@@ -1,36 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Temples Page on the WDD131 website">
+    <meta name="description" content="WDD 131 - Advanced responsive website example.">
     <meta name="author" content="Tlokotsi Foulo">
-    <link rel="stylesheet" type="text/css" href="styles/filtered-temples.css">
-    <link rel="stylesheet" type="text/css" href="styles/filtered-temples-large.css">
-    <script src="scripts/filtered-temples.js" defer></script> 
-    <title>WDD 131 - Dynamic Web Fundamentals - Temples album assignment - Tlokotsi Foulo</title>
+    <title>Temple Album - Tlokotsi Foulo</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
 </head>
 <body>
     <header>
-        <h1>Temple Album</h1>
-        <button id="menu-toggle">☰</button> 
+        <h1> Temple</h1>
         <nav>
-            <ul class="navigation">
-                <li><a>Home</a></li>
-                <li><a>Old</a></li>
-                <li><a>New</a></li>
-                <li><a>Large</a></li>
-                 <li><a>Small</a></li>
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="temples">
-        </section>  
+    <main id="temple-container">
+        <!-- Temple cards will be generated here -->
     </main>
     <footer>
-        <p></p><p></p><p></p>
+        <p>&copy; <span id="copyright-year"></span> Tlokotsi Foulo, Semonkong, Lesotho</p>
+        <p>Last modified: <span id="last-modified"></span></p>
     </footer>
+    <script src="scripts/filtered-temples.js" defer></script>
 </body>
-
 </html>

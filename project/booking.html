@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="">
+    <meta name="author" content="Tlokotsi Foulo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Sniglet:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="booking.html"><img src="images/logo.JPG" alt="logo"></a>
+        <a id="menu" href="#"></a>
+        <nav class="nav">
+            <ul class="navigation">
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a id="Products" href="about.html">About</a></li>
+                <li><a id="Order" href="booking.html">Bookings</a></li>
+                <li><a id="contactus" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="thank.html" class="contactf" id="ContactForm">
+            <fieldset>
+                <Legend>Book an Accomodation</Legend>
+
+                <label for="place">Preffered Accomodation:</label>
+                <select id="place" name="place">
+                    <option value="Please select">Please select</option>
+                    <option value="Semonkong Lodge">Semonkong Lodge</option>
+                    <option value="Mountain Delight">Mountain Delight Lodge</option>
+                    <option value="Serumula">Serumula Guest House</option>
+                    <option value="Molibeli">Molibeli Guest house</option>
+                    <option value="Bonnini">Bonnini Homestay</option>
+                    <option value="Mojaje">Mojaje B&B</option>
+                </select>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.ls" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+XXX-XXXX-XXXX">
+
+                <label for="arrival">Arrival Date:</label>
+                <input type="date" id="arrival" name="arrival" required>
+
+                <label for="departure">Departure Date:</label>
+                <input type="date" id="departure" name="departure" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+
+                <label for="room_type">Room Type:</label>
+                <select id="room_type" name="room_type">
+                        <option value="Please select">Please select</option>
+                        <option value="single">Single Room</option>
+                        <option value="double">Double Room</option>
+                        <option value="suite">Suite</option>
+                </select>
+
+                <label for="comments">Special Requests/Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                <label><input type="checkbox" id="newsletter" name="news" value="yes">Subscribe to Ours
+                    Newsletter</label>
+            </fieldset>
+
+            <input type="submit" value="Submit Booking">
+        </form>
+
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p id="last-modified"></p>
+        <div>
+            <a href="https://facebook.com" target="_blank">
+                <img class="footer__img" src="images/Facebook.png" alt="facebook" width="50">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img class="footer__img" src="images/x.png" alt="twitter" width="50">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="footer__img" src="images/instagram.jpg" alt="instagram" width="50">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

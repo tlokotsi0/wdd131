@@ -1,0 +1,303 @@
+@media only screen and (min-width: 700px) {
+    :root {
+        --background-color: white;
+        /* Tea Rose */
+        --header-background: #fff;
+        /* Steel Blue */
+        --link-color: #0d2435;
+        /* Steel Blue links */
+        --text-color: #333;
+        /* Dark gray text */
+        --footer-background: #F4C3C2;
+        /* Tea Rose footer */
+    }
+
+    body {
+        background-color: var(--background-color);
+        font-family: "Sniglet", serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: 0;
+        padding: 1px;
+        color: var(--text-color);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #categorynav {
+        display: none;
+    }
+
+    nav {
+        align-self: center;
+        background-color: var(--header-background);
+        color: var(--text-color);
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    nav a {
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    h1 {
+        font-weight: 100;
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 100;
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background-color: var(--header-background);
+        padding: 20px;
+        text-align: left;
+        color: #333;
+    }
+
+    h1,
+    h2,
+    h3 {
+        margin: 0 10px;
+        font-family: "Playwrite GB S", serif;
+        align-self: center;
+    }
+
+    p {
+        margin: 10px;
+        font-family: "Playwrite GB S", serif;
+    }
+
+    main {
+        display: grid;
+        width: 93%;
+        max-width: 1000px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 1rem auto 0;
+        border-top: 1px solid #443850;
+        font-size: 0.8rem;
+        font-family: "Playwrite GB S", serif;
+    }
+
+
+
+
+    /*------Classes--------*/
+
+    .navigation,
+    .category {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation li,
+    .category li {
+        display: block;
+        color: #333;
+    }
+
+    .navigation a,
+    .category a {
+        text-align: center;
+    }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .products-grid img {
+        max-width: 400px;
+        max-height: auto;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 950px) {
+        .products-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .search_input input[type="text"] {
+        background-color: #eee;
+        border: 1px solid #999;
+        border-radius: 6px;
+        padding: .55rem;
+        color: #555;
+        width: 50%;
+        margin: 25px 25%;
+    }
+
+    .banner {
+        display: contents;
+        background-position: center;
+        max-width: 1000px;
+        margin-top: 25px;
+    }
+
+    .select-button {
+        border: none;
+        background-image: #fff;
+        color: var(--text-color);
+        border-radius: 6px;
+        width: 50%;
+        padding: .50rem;
+        margin: 10px 25%;
+        box-shadow: 1px 1px 4px #4d4a4a;
+        cursor: pointer;
+    }
+
+    .information {
+        display: grid;
+        grid-column: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .information div {
+        grid-column: 1 / 3;
+        justify-content: center;
+    }
+
+    .information h1 {
+        grid-column: 1 / 3;
+        text-align: center;
+        margin: 15px auto;
+    }
+
+    .information ul {
+        padding: 20px;
+        font-size: 1em;
+        font-weight: 100;
+    }
+
+    .information li {
+        list-style: none;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        max-width: 410px;
+        grid-column: 1 / 2;
+    }
+
+    /*------Form------*/
+
+    .contactf form {
+        grid-column: 1 / 3;
+        align-items: center;
+        justify-self: end;
+    }
+
+    .contactf fieldset {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: .5rem 2%;
+        width: 410px;
+    }
+
+    .contactf legend {
+        color: #445ba9;
+        padding: 0 .5rem;
+    }
+
+    .contactf label {
+        padding-top: 1rem;
+        display: block;
+        color: #3581B8;
+        font-size: .9rem;
+    }
+
+    .contactf input[type="text"],
+    .contactf input[type="tel"],
+    .contactf input[type="email"] {
+        background-color: #eee;
+        border: 1px solid #999;
+        border-radius: 6px;
+        padding: .75rem;
+        color: #555;
+        width: 93%;
+        max-width: 400px;
+    }
+
+    .contactf input[type="checkbox"] {
+        margin-right: 6px;
+
+    }
+
+    .contactf textarea {
+        width: 400px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .contactf input[type="submit"] {
+        display: grid;
+        border: none;
+        background-image: linear-gradient(#352d29, #3581B8);
+        justify-content: center;
+        color: #fff;
+        border-radius: 6px;
+        width: 96%;
+        max-width: 400px;
+        margin: 10px auto;
+        box-shadow: 1px 1px 4px #999;
+    }
+
+    .contactf input:required {
+        border-right: solid 8px red;
+    }
+
+    .contactf input:required:valid {
+        border-right: solid 8px green;
+    }
+
+    .thank {
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 50px 20%;
+        text-align: center;
+    }
+
+}

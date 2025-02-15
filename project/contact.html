@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="Contact form">
+    <meta name="author" content="Tlokotsi Foulo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Sniglet:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body data-page="contact">
+    <header>
+        <a href="contact.html"><img src="images/logo.JPG" alt="logo"></a>
+        <a id="menu" href="#"></a>
+        <nav class="nav">
+            <ul class="navigation">
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a id="Products" href="about.html">About</a></li>
+                <li><a id="Order" href="booking.html">Bookings</a></li>
+                <li><a id="contactus" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="information">
+        <h1>Reach Our Team</h1>
+        <div>
+            <h2>Company information:</h2>
+            <ul>
+                <li>Address: Ha Lepae #434</li>
+                <li>Phone: +266 5629 7640</li>
+                <li>Email: semonkongadventures@gmail.com</li>
+            </ul>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11294.61256800435!2d28.043715573289713!3d-29.83454007600224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e8c83b0e19cb299%3A0xc34037ffefc20c19!2sSemonkong!5e0!3m2!1sen!2sls!4v1739437132280!5m2!1sen!2sls" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form method="get" action="thank.html" class="contactf" id="ContactForm">
+            <fieldset>
+                <Legend>Contact Us</Legend>
+                <p>We are here to answer your questions!</p>
+                <label>name<input type="text" id="fullname" name="name" placeholder="Name" required></label>
+                <label>Phone<input type="tel" id="phonenumber" name="phone" placeholder="09XX XXX XXX" required></label>
+                <label>Email (opcional)<input type="email" id="email" name="email"
+                        placeholder="example@mymail.com"></label>
+                <label>Message (opcional)</label>
+                <textarea name="massage" id="msg"></textarea>
+
+                <label><input type="checkbox" id="newsletter" name="news" value="yes">Subscribe to Ours
+                    Newsletter</label>
+            </fieldset>
+
+            <input type="submit" value="Rating the product">
+        </form>
+
+        <div id="thankYouMessage" style="display: none;" class="thank">Thank you for contacting us. We will get back to
+            you shortly.</div>
+
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p id="last-modified"></p>
+        <div>
+            <a href="https://facebook.com" target="_blank">
+                <img class="footer__img" src="images/Facebook.png" alt="facebook" width="50">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img class="footer__img" src="images/x.png" alt="twitter" width="50">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="footer__img" src="images/instagram.jpg" alt="instagram" width="50">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
